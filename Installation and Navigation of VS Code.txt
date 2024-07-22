@@ -1,0 +1,159 @@
+Installation and Navigation of Visual Studio Code
+
+Steps to download VS Code
+- Go to the official website at https://code.visualstudio.com/
+- I choose the VS code supported by my operating system, Windows and downloaded the installer file.
+- Once the download was complete, I followed the instructions in the setup wizard to complete the installation. 
+- Once the VS code is launched, I then installed extensions for programming languages and functionalities. 
+
+First time setup
+Important settings include: 
+- Set a comfortable font size and choose a theme (dark, dark+, light, custom theme).
+- Configure the identation (spaces or tab) 
+- Ensure the VS code recognizes and provides appropriate syntax highlighting. Downloaded a syntax highlight extension. 
+- Configure Git settings for version control integration. I set up a Git path. 
+
+Extensions added include: 
+- Extensions specific to programming languages such as Python, Javascript, Java. These provide syntax highlighting, code completion, debugging support. 
+- Installed Git extensions such as GitLens or Github Pull requests for seamless integration with Git repositories. 
+- Installed bootstrapping, prettier, dart, flutter, gitignore, learn linting, html live server, pylance, python debugger, sqlite viewer, sql tools, windows terminal integration. 
+
+User Interface Overview
+i) Activity bar- This is located vertically on the far left of VS code window. 
+It provides quick access to different functionalities and views within VS code. 
+Sections include: 
+Explorer- allows navigation through project files and folders. 
+Search- facilitates searching within your workspace. 
+Source control- integrates with Git for managing changes to your codebase. Allows access to repository. 
+Run and Debug- controls for running and debugging applications within VS Code. 
+Extensions- allows one to browse, install and manage extensions to enhance functionality. 
+Github- allows one to see what has been shared on Github repository. 
+Live share: allows one to collaborate with others in editing and debugging in real-time. 
+
+ii)Side bar- located on the right of the activity bar and contains views and panels related to your project or workspace. 
+It contains: 
+Explorer- displays file structure of your project for easy navigation and management. 
+Search- tools for searching text across files
+Source control- shows Git status and allows for version control operations like commit, pull, push. 
+Extensions- Lists installed extensions and allows one to search
+Debug- shows debugging information. 
+
+iii) Editor group- allows one to work on multiple files simulatneously or view different sections of the same file side by side. 
+- you can split the editor vertically or horizontally to create multiple editor groups. 
+- useful for comparing code, editing related files or multitasking between diffrent parts of a project. 
+- this is accessed in Views- Editor Layout. 
+
+iv) Status bar- loacted at the bottom of VS code window and provides information and quick actions related to your current workspace. 
+Contents include: 
+Language mode: displays programming language associated with active file. 
+Git branch- shows current Git branch and status 
+Errors and Warnings- alerts you to syntax errors, warnings or other issues in the code.
+Line endings- shows line endings e.g CRLF, LF
+Encoding- displays file encoding format e.g UTF-8, 16
+Space and Tab size- shpws current indentation settings. 
+Feedback and Actions- quick access to setings, extensions, and other actions. 
+
+Command Palette
+This is a powerful tool that allows you to access various comands and features through a text based interface. 
+Useful for executing commands quickly without navigating through menus. 
+You can open the command palette using the shortcut Ctrl+Shift+P
+Alternatively click on View> Command palette
+Common tasks include: 
+- executing commands e.g open file, save all
+- Allows access to keyboard shortcuts lookup if forgotten a shortcut. Type Keyboard shortcuts> preferences> open shortcuts
+- opens files, specific function or symbol by typing part of the name or navigating through the list. 
+- perform Git operations such as Git:commit, pull, push
+- install, update, disable or manage extensions by typing commands like Extensions> Install, Disable
+- Executes tasks defined in your tasks.json file or through installed extensions or Task>Run task
+- access and modify settings through Preferences>Open settings>settings.json
+- start debugging sessions on Debug>start debugging
+- performs actions related to your workspace e.g Add Folder, open workspace, save workspace as
+- customise the appearance and behaviour of VS Code
+
+Extensions in VS code
+They enhance and customize the functionality of VS Code. 
+They extend the capabilities of the editor beyond the core features, catering for different programming languages, development workflows and personal preferences. 
+Ctrl+shift+X
+-language support: syntax highlighting, code completion, linting, formatting
+-IDE features: debugging, Git integration, terminal integration to streamline development workflows and reduce context switching. 
+-Customization and Themes
+-Productivity tools e.g code snippets, live server, project mx tools to automate repetitive tasks and enhance developer efficency. 
+-Version Control and collaboration e.g gitlens
+-Integration with external services and APIs allowing seamless integration with clous platforms, databases, testing frameworks. 
+-Learning, offering tutorials, interactive coding exercises
+
+Integrated terminal
+To open go to View> Terminal
+or use shortcut Ctrl+backtick or backquote
+You can use the terminal to: 
+- navigate directories e.g cd command
+- run commands 
+- install packages e.g npm, pip, apt-get
+- compile and run the code directly
+- run git commands e.g commit, push, pull
+- run debugging tools 
+Advantages 
+- seamless integration because you can work in a single window without switching applications
+- readily accessible so saves time. 
+- allows customization of terminal appearance and behaviour. 
+- easier navigation through errors, warnings and logs. 
+
+File and Folder Management
+To create, open or manage files this can be done on the User Interface or command palette
+Explorer on activity bar> New file or New folder> name of file or folder> enter
+or Ctrl+shift+E
+or Ctrl+Shift+P (command palette)>new file or folder
+You can also drag or drop files or folders directly to VS code
+
+Managing files and folders 
+-Renaming and Deleting: right click file or folder or use Rename File/ Delete File in the command palette
+-Moving and copying: drag files to desired location or hold down Ctrl as you drag. 
+-Managing multiple files: Ctrl+click in explorer view to manage bulk operations e.g rename, delete, copy, move files at once
+-Saving files: Ctrl+s
+-Right clicking files in explorer view can provide additional options like copy path, show files
+-Searching functionality Ctrl+F(find) or Ctrl+H(replace)
+
+Settings and Preferences
+To find settings: 
+-Settings UI: settings/gear icon or Ctrl+
+-Command palette: Ctrl+shift+P> Preferences> Open settings UI
+To customize settings: 
+-font size, tab size, line height
+-workspace settings are stored in .vscode/settings.json file within project directory
+-view existing keyboard shortcuts on Ctrl+K or Ctrl+S
+-color theme changes on workbench.colorTheme and icons on workbench.iconTheme
+
+Debugging in Vs Code
+Install required extensions e.g Javascript, Node.js, debugger for chrome
+-Create or open your project File>Open folder
+-configure launch configuration and open the debug view on Ctrl+shift+D or click on settings icon to create a launch.json file if doesnt exist
+-select environment you want to debug e.g node.js, chrome, python
+-set breakpoints by navigating to the file, click on left margin next to line numbers or use F9
+breakpoints pause the execution at specific lines to inspect variables and code flow during debugging
+Start debugging
+- press f5 or green play button in debug view
+Debugging features
+- Stepping through code using the toolbar buttons e.g step over, step into, step out or F10, F11, Shift+F11
+- Inspecting variables in the Variables pane during debugging or add by right clicking and selecting Add to watch
+- Debug console helps to interactively execute code snippets and evaluate expressions in context of debugging session. 
+- Call stack helps to undertand the sequence of function calls that led to current point in code execution
+- Set breakpoints by right click on breakpoint> edit to break execution when specific conditions are met. 
+- Exception Handling on Exceptions in Debug view to pause execution when exceptions occur. 
+- Run debugging tasks in your tasks.json file or extensions Debug>Run task
+- Debug multiple instances of program simulatneously by Debug>Add Configuration> Select a different launch configuration
+
+Using Source Control
+User can integrate Git with VS code by: 
+- Install Git on git-scm.com and follow steps
+- Open a project folder in Vs Code File> Open folder
+- Initialize Git repository by opening Terminal or Ctrl+View> Terminal
+- Use git init to initialize Git in project directory
+Using Git in VS Code
+- click source control icon or Ctrl+shift+G
+- or use the terminal to type git add<file> or git add .
+- enter a commit message in textbox in source control view or type git commit "message"
+- use push button in source control view to push committed changes to remote repository on Github or git push
+- use pull button to fetch and integrate changes from remote repository into your local branch
+- click file to view its history (commits) and changes over time (diffs)
+- create and switch branches using Branches dropdown in source control view
+- merge branches using integrated terminal git merge <branch>
